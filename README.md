@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Countries React Demo - built with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This app is a simple demo of listing countries returned from the https://countries.trevorblades.com/ GraphQL API.
+
+It uses apollo graphql library to connect to the GraphQL API.
+
+A custom hook `useCountries` utilises the `useLazyQuery` hook from the apollo library to fetch the data from the GraphQL API. It also adds an image url which returns a random image from the unsplash API, based on the country name.
+
+Material UI is used to build out the interface. 
 
 ## Available Scripts
 
