@@ -8,7 +8,13 @@ It uses apollo graphql library to connect to the GraphQL API.
 
 A custom hook `useCountries` utilises the `useLazyQuery` hook from the apollo library to fetch the data from the GraphQL API. It also adds an image url which returns a random image from the unsplash API, based on the country name.
 
-Material UI is used to build out the interface. 
+Material UI is used to build out the interface.
+
+## Improvements to make
+- Improve styling of grid to not have padding on the left and right of list.
+- Improve Modal to have a close button for a11y.
+- Improve Modal styling to better present data & add more data.
+- Add a search bar to filter the list.
 
 ## Available Scripts
 
