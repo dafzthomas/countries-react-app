@@ -61,6 +61,7 @@ const Countries = () => {
           flexDirection: "row",
           alignItems: "center",
           gap: "1rem",
+          flexWrap: "wrap",
         }}
       >
         <FormControl

@@ -19,9 +19,19 @@ const CardLayout = ({ countries }: { countries: Country[] }) => {
   );
 
   return (
-    <Grid container spacing={2}>
+    <Grid container>
       {countries.map((row) => (
-        <Grid item key={row.name} xs={12} sm={6} md={4} lg={3}>
+        <Grid
+          item
+          key={row.name}
+          xs={12}
+          sm={6}
+          md={4}
+          lg={3}
+          sx={{
+            padding: 1,
+          }}
+        >
           <Card>
             <CardActionArea
               onClick={() => {
@@ -62,6 +72,7 @@ const CardLayout = ({ countries }: { countries: Country[] }) => {
             transform: "translate(-50%, -50%)",
             width: 400,
             maxHeight: "80vh",
+            maxWidth: "80vw",
             overflowY: "auto",
             bgcolor: "background.paper",
             border: "2px solid #000",
